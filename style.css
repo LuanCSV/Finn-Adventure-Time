@@ -100,3 +100,26 @@ body{
     right: 45px;
 }
 
+.cheek{
+    width: 30px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f8ddce;
+    position: absolute;
+    bottom: 50px;
+}
+
+.c-left{
+    border-right: 2px solid black;
+    left: 125px;
+    transform: rotate(10deg);
+    box-shadow: inset -5px 1px 2px #ddc2b0;
+}
+
+.c-right{
+    border-left: 2px solid black;
+    right: 125px;
+    transform: rotate(-10deg);
+    box-shadow: inset 5px 1px 2px #ddc2b0;
+}
+
