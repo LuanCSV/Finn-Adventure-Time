@@ -1,0 +1,102 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face{
+    position: relative;
+    width: 450px;
+    height: 320px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background: #f8ddce;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.face .eye{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 70px;
+    border: 3px solid black;
+    background: #000;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.eye::after{
+    content: '';
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -24px;
+    left: -10px;
+}
+
+.eye::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+}
+
+.mouth{
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    border: 2px solid #000;
+
+    position: absolute;
+    bottom: 60px;
+    overflow: hidden;
+    /* left: 135px; */
+}
+
+.tooth {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.t-left{
+    top: -10px;
+    left: 30px;
+}
+.t-center{
+    top: -15px;
+    left: 75px;
+}
+
+.t-right{
+    top: -10px;
+    right: 30px;
+}
+
+.tongue{
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ea6e74;
+    position: absolute;
+
+    bottom: -20px;
+    right: 45px;
+}
+
