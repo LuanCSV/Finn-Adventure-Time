@@ -41,6 +41,8 @@ body{
     position: absolute;
     top: -24px;
     left: -10px;
+
+    animation: shake .2s infinite ease-in-out alternate;
 }
 
 .eye::before{
@@ -52,6 +54,8 @@ body{
     position: absolute;
     bottom: -20px;
     right: 0px;
+
+    animation: shake .2s infinite ease-in-out alternate;
 }
 
 .mouth{
@@ -123,3 +127,13 @@ body{
     box-shadow: inset 5px 1px 2px #ddc2b0;
 }
 
+
+@keyframes shake {
+    0%{
+        transform: translateX(-1px);
+    }
+
+    100%{
+        transform: translateX(1px);
+    }
+}
